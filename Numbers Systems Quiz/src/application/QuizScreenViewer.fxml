@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #45d8ff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.QuizScreenController">
+   <children>
+      <Label fx:id="quizType" alignment="CENTER" focusTraversable="false" layoutX="216.0" layoutY="29.0" prefHeight="45.0" prefWidth="373.0" text="Quick Quizzes" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold Italic" size="37.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitButton" focusTraversable="false" layoutX="491.0" layoutY="407.0" mnemonicParsing="false" onAction="#submitButtonPressed" prefHeight="39.0" prefWidth="170.0" style="-fx-background-color: #39b54a; -fx-background-radius: 20;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="29.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" focusTraversable="false" layoutX="688.0" layoutY="23.0" mnemonicParsing="false" onAction="#exitButtonPressed" prefHeight="40.0" prefWidth="84.0" style="-fx-background-color: #f7931e; -fx-background-radius: 20;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="skipButton" focusTraversable="false" layoutX="92.0" layoutY="488.0" mnemonicParsing="false" onAction="#skipButtonPressed" prefHeight="45.0" prefWidth="126.0" style="-fx-background-color: #e7d803; -fx-background-radius: 20;" text="Skip" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="quitButton" focusTraversable="false" layoutX="247.0" layoutY="488.0" mnemonicParsing="false" onAction="#quitButtonPressed" prefHeight="45.0" prefWidth="126.0" style="-fx-background-color: #ff1d25; -fx-background-radius: 20;" text="Quit" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="24.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#b9faff" height="269.0" layoutX="82.0" layoutY="109.0" stroke="#b9faff" strokeType="INSIDE" width="604.0" />
+      <Label fx:id="quizQuestionDisplay" alignment="TOP_LEFT" focusTraversable="false" layoutX="82.0" layoutY="109.0" prefHeight="269.0" prefWidth="604.0" text="Convert this value into decimal...">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="answerField" layoutX="92.0" layoutY="407.0" prefHeight="55.0" prefWidth="373.0" promptText="Type answer here">
+         <font>
+            <Font name="Consolas Bold" size="20.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

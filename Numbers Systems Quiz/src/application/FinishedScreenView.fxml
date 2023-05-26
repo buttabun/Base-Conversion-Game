@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #45d8ff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FinishedScreenController">
+   <children>
+      <Button fx:id="tryAgainButton" layoutX="125.0" layoutY="454.0" mnemonicParsing="false" onAction="#tryAgainButtonPressed" prefHeight="60.0" prefWidth="230.0" style="-fx-background-color: #fbb03b; -fx-background-radius: 20;" text="Try Again?" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="420.0" layoutY="454.0" mnemonicParsing="false" onAction="#exitButtonPressed" prefHeight="60.0" prefWidth="230.0" style="-fx-background-color: #ff0000; -fx-background-radius: 20;" text="Exit to Menu" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="25.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#b9faff" height="269.0" layoutX="98.0" layoutY="119.0" stroke="#b9faff" strokeType="INSIDE" width="604.0" />
+      <Label fx:id="finalScore" alignment="TOP_LEFT" layoutX="115.0" layoutY="162.0" prefHeight="210.0" prefWidth="570.0" text="Your results..." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Consolas" size="30.0" />
+         </font>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </Label>
+      <Text fill="WHITE" layoutX="234.0" layoutY="80.0" stroke="#fbb03b" strokeType="OUTSIDE" strokeWidth="5.0" text="Finished!" wrappingWidth="319.205078125">
+         <font>
+            <Font name="Consolas Bold Italic" size="64.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
